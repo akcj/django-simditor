@@ -50,6 +50,14 @@ urlpatterns = [
     url(r'^simditor/', include('simditor.urls'))   # add this line
 ]
 ```
+-- django.version >= 2.0
+
+```python
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('simditor/',include('simditor.urls'))   # add this line
+]
+```
 
 `settings.py`
 
